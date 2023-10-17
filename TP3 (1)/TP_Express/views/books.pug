@@ -1,0 +1,29 @@
+//- extends layout
+
+//- block content
+//-   h1 Create books
+//-   form(action='/books/create', method='POST')
+//-     label(for='title') Title:
+//-     input#title(type='text', name='title') 
+//-     br
+//-     label(for='author') Author:
+//-     input#author(type='text', name='author')
+//-     br
+//-     but
+//-     button(type='submit') create
+extends layout
+
+block content
+  div(class='min-h-screen flex items-center justify-center')
+    div(class='w-full max-w-xs')
+      h1(class='text-2xl font-bold text-center mb-4') Create Books
+      form(action='/books/create', method='POST')
+        div(class='mb-4')
+          label(class='block text-sm font-semibold', for='title') Title
+          input(id='title', class='w-full border p-2 rounded-md focus:outline-none focus:ring', type='text', name='title')
+
+        div(class='mb-4')
+          label(class='block text-sm font-semibold', for='author') Author
+          input(id='author', class='w-full border p-2 rounded-md focus:outline-none focus:ring', type='text', name='author')
+
+        button(class='w-full py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700 focus:outline-none', type='submit') Create

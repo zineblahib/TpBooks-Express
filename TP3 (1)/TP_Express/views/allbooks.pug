@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1.text-2xl.font-bold.my-4 Liste des Livres
+  ul
+    each book in books
+      li(class='border p-2 my-2 rounded-md', style='list-style-type: disc;')= `${book.title} by ${book.author}`
+  
+  // Ajouter un lien de déconnexion
+  a(class='block text-blue-500 mt-4', href='/logout') Déconnexion

@@ -1,0 +1,13 @@
+/* styles.css */
+
+/* Add custom styles here if needed */
+
+/* Example: Center content vertically and horizontally */
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
